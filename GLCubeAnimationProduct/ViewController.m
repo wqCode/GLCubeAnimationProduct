@@ -35,7 +35,7 @@
 }
 
 - (void)loadSource {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"timg.jpeg" ofType:nil];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"timg" ofType:@"jpeg"];
     //设置 纹理参数 纹理坐标原点是左下角,但是图片显示原点应该是左上角.
     NSDictionary *options = @{GLKTextureLoaderOriginBottomLeft:@(GL_TRUE)};
     GLKTextureInfo *info = [GLKTextureLoader textureWithContentsOfFile:filePath options:options error:nil];
